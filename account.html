@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="#gabrielem - 3ml.it">
+    <link rel="icon" href="favicon.ico">
+
+    <title>
+      BIT-YES - Account page
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <link href="css/jquery.littlelightbox.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+
+  <body>
+<!--
+<div id="popup">
+
+  <h1>
+    <i class="fa fa-close"></i>
+    <span>!</span> ERROR
+  </h1>
+  <p class="text-center">
+    You don't have enough credit in balance.
+    <br>
+    You have 0 BTC = ~0 USD.
+    <br>
+    Cannot make a payment of 1000 USD.
+
+    <div class="text-center">
+      <a href="#" class="ok">OK</a>
+    </div>
+
+  </p>
+</div>
+
+<div id="overlay"></div>
+--> 
+<div class="container-fluid dark-bg">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="images/logo.png" alt="" class="logo" />
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-6 text-center fb-login-btn">
+
+        </div>
+        <div class="col-md-6 text-center fb-login-btn">
+          <div class="text-center">
+            <i class="text-withe-border">
+              Find ATM near you
+            </i>
+            <i class="text-withe-border">
+              Trade on Localbitcoins
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="container">
+    <div class="row row-eq-height" id="account">
+
+      <div class="col-md-4 item item1">
+        <h1>
+          My Account
+        </h1>
+        <div class="profile">
+          <img src="images/avatar.png" alt="" />
+          Romano Babu
+          <i class="fa fa-sign-out"></i>
+
+        </div>
+
+        <table class="stats">
+          <tr> <td> Balance </td> <td> 0.0054 <i class="fa fa-bitcoin"></i> </td> </tr>
+        </table>
+
+        <table class="stats">
+          <tr> <td> Usd Equivalent <i class="fa fa-arrow-circle-o-down"></i> </td> <td> 5 <i class="fa fa-dollar"></i> </td> </tr>
+        </table>
+
+        <table class="stats">
+          <tr> <td> Sent </td> <td> 0.0034 <i class="fa fa-bitcoin"></i> </td> </tr>
+        </table>
+
+        <table class="stats">
+          <tr> <td> Recived </td> <td> 0.0021 <i class="fa fa-bitcoin"></i> </td> </tr>
+        </table>
+
+        <table class="stats">
+          <tr> <td> Btc Price </td> <td> 1000 <i class="fa fa-dollar"></i> </td> </tr>
+        </table>
+      </div>
+
+      <div class="col-md-4 item item2">
+        <h1>
+          Recive Bitcoins
+        </h1>
+        <div class="text-center content">
+
+          <label>Recive Here</label>
+          <div>
+            <input type="text" name="" value="17mcFB7Xyymd9hxp2bgNPz1ruWsdoPoCnZ">
+          </div>
+
+          <div class="text-center content">
+            <b>Copy Address</b>
+          </div>
+          <div class="text-center content">
+            <img src="images/qrcode.png" alt="" />
+          </div>
+          <div class="text-center content">
+            <img src="images/share.png" alt="" />
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4 item item3">
+        <h1>
+          Send Bitcoins
+        </h1>
+
+        <div class="text-center content">
+          TO:
+          <img src="images/avatar-empty.png" alt="" />
+          <input type="text" name="" value="" placeholder="Insert Facebook name OR BTC Address" class="address">
+        </div>
+
+        <div class="text-center content">
+          <div class="amount">
+            Amount
+            <input type="text" name="" value="" class="price">
+            USD
+            <i class="fa fa-arrow-circle-o-down"></i>
+          </div>
+        </div>
+
+        <div class="text-center content">
+
+          <label>Message</label>
+          <div>
+            <textarea name="" placeholder="Pease write a message to your payee" class="message"></textarea>
+          </div>
+
+          <a href="#" class="send">SEND</a>
+        </div>
+
+        <div class="text-center content">
+          Don't find the Facebook name of your payee
+          <a href="#" class="btn btn-primary btn-xs">
+            INVITE NOW (get fee refund)
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="container-fluid dark-bg">
+  <div id="footer" class="row">
+    <div class="col-md-4 ">
+      Copyright &copy; 2017 BIT-YES
+    </div>
+    <div class="col-md-8 text-right">
+      <a href="#">Term & Conditions</a>
+      <a href="#">Privacy</a>
+      <a href="#">Contact</a>
+
+
+      <span class="lang-selector">
+        <div id="languages">
+          <a href="#">Italiano</a>
+          <a href="#">English</a>
+        </div>
+        English <i class="fa fa-arrow-circle-o-down pull-right"></i>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script type="text/javascript" src="js/ui/1.10.3/jquery-ui.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <script charset="utf-8">
+    $(function() {
+
+      //Show mobile contact popup
+      $(".lang-selector").on( "click", function(){
+        console.log("log");
+          $("#languages").fadeToggle()
+      } );
+
+
+    })
+
+    </script>
+
+  </body>
+</html>
