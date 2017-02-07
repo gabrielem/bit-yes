@@ -81,6 +81,9 @@ body, html{height: 100%;margin:0; padding:0;}
 
 
 
+.footer{
+  margin-top:30px;
+}
 #footer{
   padding: 30px 60px 30px 40px;
   color:#ffffff;
@@ -346,6 +349,7 @@ table.stats tr td{
   height: 250px;
   width: 100%;
   background: #004461;
+  border: 3px solid #004461;
 }
 
 #popup h1{
