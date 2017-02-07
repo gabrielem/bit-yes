@@ -162,6 +162,56 @@ body, html{height: 100%;margin:0; padding:0;}
   padding-left: 20px;
   font-size:30px;
 }
+
+
+
+.tx .title{
+  padding: 0px;
+  background-color: #00425b;
+
+}
+.tx h1{
+  font-size: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.tx {
+  padding-bottom: 30px;
+}
+
+
+.tx .row-body{
+}
+.tx .bg-head{
+  background-color: #0077a3;
+  color:#ffffff;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.tx .item{
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.tx .item .line.first{
+  margin-top: 30px;
+}
+
+.tx .item .line{
+  margin: 10px 0;
+  color: #00425b;
+}
+.tx .item .line.in{
+  color: #2481a9;
+}
+
+
 #account .item h1{
   padding: 15px 5px 15px 5px;
   text-align: center;
