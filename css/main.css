@@ -190,6 +190,8 @@ body, html{height: 100%;margin:0; padding:0;}
 
 .tx .row-body{
 }
+
+
 .tx .bg-head{
   background-color: #0077a3;
   color:#ffffff;
@@ -213,6 +215,11 @@ body, html{height: 100%;margin:0; padding:0;}
 .tx .item .line.in{
   color: #2481a9;
 }
+
+.tx .item .mobile .line{
+  margin: 10px 10px;
+}
+
 
 
 #account .item h1{
@@ -412,36 +419,32 @@ table.stats tr td{
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  #contact-us-mobile-icon{display: none;}
-  #contact-us-desktop-popup{display: block;}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  img.rita,img.riccardo{
-    display: none;
-  }
-  #contact-us-mobile-icon{display: none;}
-  #contact-us-desktop-popup{display: block;}
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  #contact-us-mobile-icon{display: none;}
-  #contact-us-desktop-popup{display: block;}
-  #contact-us-map-popup{display: none;}
+  .row-eq-height{
+    display: block !important;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-#contact-us-mobile-icon{display: block;}
-#contact-us-desktop-popup{display: none;}
+  .row-eq-height{
+    display: block !important;
+  }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-#contact-us-mobile-icon{display: block;}
-#contact-us-desktop-popup{display: none;}
+  .row-eq-height{
+    display: block !important;
+  }
 }
 
 

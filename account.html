@@ -21,6 +21,7 @@
     <link href="css/animate.css" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
 
     <link href="css/jquery.littlelightbox.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -73,7 +74,7 @@
             <i class="text-withe-border">
               Find ATM near you
             </i>
-            
+
             <i class="text-withe-border">
               Trade on Localbitcoins
             </i>
@@ -90,7 +91,7 @@
   <div class="container">
     <div class="row row-eq-height" id="account">
 
-      <div class="col-md-4 item item1">
+      <div class="col-md-4 col-xs-12 item item1">
         <h1>
           My Account
         </h1>
@@ -101,7 +102,8 @@
 
         </div>
 
-        <table class="stats">
+
+        <table class="stats ">
           <tr> <td> Balance </td> <td> 0.0054 <i class="fa fa-bitcoin"></i> </td> </tr>
         </table>
 
@@ -122,7 +124,7 @@
         </table>
       </div>
 
-      <div class="col-md-4 item item2">
+      <div class="col-md-4 col-xs-12 item item2">
         <h1>
           Receive Bitcoins
         </h1>
@@ -147,7 +149,7 @@
 
       </div>
 
-      <div class="col-md-4 item item3">
+      <div class="col-md-4 col-xs-12 item item3">
         <h1>
           Send Bitcoins
         </h1>
@@ -205,18 +207,114 @@
     </div>
   </div>
 
-  <div class="row row-body">
-    <div class="col-md-2 item">
-      <div class="bg-head">
+
+<!--
+  <div class="row row-body visible-xs">
+    <div class="col-xs-12 item">
+      <div class="row mobile">
+        <div class="col-xs-4 text-left line"> In/Out </div>
+        <div class="col-xs-6 text-left line"> OUT </div>
+      </div>
+      <div class="row mobile">
+        <div class="col-xs-4 text-left line"> Time </div>
+        <div class="col-xs-6 text-left line"> 12:35 PM / 25/10/2017 </div>
+      </div>
+
+      <div class="row mobile">
+        <div class="col-xs-4 text-left line"> In/Out </div>
+        <div class="col-xs-6 text-left line in"> IN </div>
+      </div>
+      <div class="row mobile">
+        <div class="col-xs-4 text-left line"> Time </div>
+        <div class="col-xs-6 text-left line"> 12:35 PM / 25/10/2017 </div>
+      </div>
+
+      <div class="row mobile">
+        <div class="col-xs-4 text-left line"> In/Out </div>
+        <div class="col-xs-6 text-left line in"> IN </div>
+      </div>
+      <div class="row mobile">
+        <div class="col-xs-4 text-left line"> Time </div>
+        <div class="col-xs-6 text-left line"> 12:35 PM / 25/10/2017 </div>
+      </div>
+
+      <div class="row mobile">
+        <div class="col-xs-4 text-left line"> In/Out </div>
+        <div class="col-xs-6 text-left line"> OUT </div>
+      </div>
+      <div class="row mobile">
+        <div class="col-xs-4 text-left line"> Time </div>
+        <div class="col-xs-6 text-left line"> 12:35 PM / 25/10/2017 </div>
+      </div>
+
+    </div>
+  </div>
+-->
+
+        <div class="row">
+          <table class="tb">
+        		<thead class="cf">
+        			<tr>
+        				<th class="text-center"> In/Out </th>
+                <th class="text-center"> Time </th>
+                <th class="text-center"> From/To </th>
+                <th class="text-center"> Status </th>
+                <th class="text-center"> Amount </th>
+                <th class="text-center"> Message </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td> OUT </td>
+                <td> 12:35 PM / 25/10/2017 </td>
+                <td> ANYONE </td>
+                <td> CONFIRMED </td>
+                <td> 0.06 <i class="fa fa-bitcoin"></i> </td>
+                <td> GIFT FOR YOU </td>
+              </tr>
+              <tr class="in">
+                <td> IN </td>
+                <td> 12:33 PM / 25/10/2017 </td>
+                <td> ANYONE </td>
+                <td> CONFIRMED </td>
+                <td> 0.06 <i class="fa fa-bitcoin"></i> </td>
+                <td> GIFT FOR YOU </td>
+              </tr>
+              <tr class="in">
+                <td> IN </td>
+                <td> 12:32 PM / 25/10/2017 </td>
+                <td> ANYONE </td>
+                <td> CONFIRMED </td>
+                <td> 0.06 <i class="fa fa-bitcoin"></i> </td>
+                <td> GIFT FOR YOU </td>
+              </tr>
+              <tr>
+                <td> OUT </td>
+                <td> 12:30 PM / 25/10/2017 </td>
+                <td> ANYONE </td>
+                <td> CONFIRMED </td>
+                <td> 0.06 <i class="fa fa-bitcoin"></i> </td>
+                <td> GIFT FOR YOU </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+<!--
+  <div class="row row-body hidden-xs">
+
+    <div class="col-sm-2 item">
+      <div class="bg-head ">
         In/Out
       </div>
-      <div class="line first"> OUT </div>
+      <div class="line first"> OUT  </div>
       <div class="line in"> IN </div>
       <div class="line in"> IN </div>
       <div class="line"> OUT </div>
     </div>
 
-    <div class="col-md-2 item">
+    <div class="col-sm-2 item">
       <div class="bg-head">
         Time
       </div>
@@ -226,7 +324,7 @@
       <div class="line"> 12:30 PM / 25/10/2017 </div>
     </div>
 
-    <div class="col-md-2 item">
+    <div class="col-sm-2 item">
       <div class="bg-head">
         From/To
       </div>
@@ -236,7 +334,7 @@
       <div class="line"> ANYONE </div>
     </div>
 
-    <div class="col-md-2 item">
+    <div class="col-sm-2  item">
       <div class="bg-head">
         Status
       </div>
@@ -245,7 +343,7 @@
       <div class="line in"> CONFIRMED </div>
       <div class="line"> CONFIRMED </div>
     </div>
-    <div class="col-md-2 item">
+    <div class="col-sm-2 item ">
       <div class="bg-head">
         Amount
       </div>
@@ -254,7 +352,7 @@
       <div class="line in"> 0.06 <i class="fa fa-bitcoin"></i> </div>
       <div class="line"> 0.06 <i class="fa fa-bitcoin"></i> </div>
     </div>
-    <div class="col-md-2 item">
+    <div class="col-sm-2 item">
       <div class="bg-head">
         Message
       </div>
@@ -263,7 +361,12 @@
       <div class="line in"> GIFT FOR YOU </div>
       <div class="line"> GIFT FOR YOU </div>
     </div>
+
+
   </div>
+-->
+
+
 </div>
 
 

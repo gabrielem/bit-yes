@@ -1,0 +1,85 @@
+table.tb {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+table.tb tr:nth-of-type(odd) {
+  background: #eee;
+}
+table.tb th {
+  background: #0077a3;
+  color: white;
+  font-weight: bold;
+
+}
+table.tb td, table.tb th {
+  padding: 6px;
+  border: 0px solid #ccc;
+  text-align: center ;
+}
+table.tb tr{
+    color: #00425b;
+}
+table.tb tr.in{
+    color: #2481a9;
+}
+
+table.tb tbody tr:first-child td{
+  padding-top: 30px;
+}
+
+
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  table.tb tbody tr:first-child td{
+    padding-top: 0px;
+  }
+
+
+	/* Force table to not be like tables anymore */
+	table.tb table, table.tb thead, table.tb tbody, table.tb th, table.tb td, table.tb tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	table.tb thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	table.tb tr { border: 1px solid #ccc; }
+
+	table.tb td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	table.tb td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	/*
+	Label the data
+	*/
+	table.tb td:nth-of-type(1):before { content: "In/Out"; }
+	table.tb td:nth-of-type(2):before { content: "Time"; }
+	table.tb td:nth-of-type(3):before { content: "From/To"; }
+	table.tb td:nth-of-type(4):before { content: "Status"; }
+	table.tb td:nth-of-type(5):before { content: "Amount"; }
+	table.tb td:nth-of-type(6):before { content: "Message"; }
+
+}
