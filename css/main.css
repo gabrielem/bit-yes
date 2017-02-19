@@ -13,6 +13,8 @@ body{
 body, html{height: 100%;margin:0; padding:0;}
 
 
+
+
 .dark-bg{
   background-color: #175268;
 }
@@ -28,6 +30,12 @@ body, html{height: 100%;margin:0; padding:0;}
 .fb-login-btn{
     padding: 40px 10px 20px 40px;
 }
+
+.fb-login-btn a{opacity: 0.8;}
+.fb-login-btn a:hover{opacity: 1.0;}
+.fb-login-btn a{opacity: 0.8;}
+.fb-login-btn a:hover{opacity: 1.0;}
+
 .wow {
    visibility: hidden;
 }
@@ -117,7 +125,7 @@ body, html{height: 100%;margin:0; padding:0;}
 }
 .lang-selector{
   position: relative;
-  border: 1px solid #ffffff;
+  border: 3px solid #cfcfcf;
   padding:3px;
   font-size:12px;
   min-width: 90px;
@@ -125,14 +133,23 @@ body, html{height: 100%;margin:0; padding:0;}
   text-align: center;
   cursor: pointer;
 }
+
+.lang-selector:hover{
+  border: 3px solid #ffffff;
+}
+
+.lang-selector:hover i.fa{
+  color: #ffffff;
+}
+
 .lang-selector i.fa{
-  font-size:16px;
+  font-size:16px;color: #cfcfcf;
 }
 
 
 
 
-.text-withe-border {
+a.text-withe-border {
   border: 1px solid #ffffff;
   color: #ffffff;
   text-align: center;
@@ -143,6 +160,11 @@ body, html{height: 100%;margin:0; padding:0;}
   font-weight: bold;
   margin-left: 5px;
   margin-right: 5px;
+  cursor: pointer;
+}
+a.text-withe-border:hover{
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #account{
@@ -165,6 +187,13 @@ body, html{height: 100%;margin:0; padding:0;}
   padding-left: 20px;
   font-size:30px;
 }
+#account .item .profile a.sign-out{
+    color: #03a585;
+}
+#account .item .profile a.sign-out:hover{
+  color:#000000;
+}
+
 
 
 
@@ -312,9 +341,11 @@ body, html{height: 100%;margin:0; padding:0;}
 }
 #account .item3 a.send:hover{
   text-decoration: none;
+  opacity: 0.8;
 }
 
-
+a.share{opacity: 1.0;}
+a.share:hover{opacity: 0.8;}
 
 
 .row-eq-height {
@@ -345,6 +376,31 @@ table.stats tr td{
 }
 
 
+.padtop{
+  padding-top: 7px;
+}
+a.social{
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  opacity: 0.8;
+
+}
+a.social:hover{
+  opacity: 1.0;
+  border: 2px solid #ffffff;
+}
+a.youtube{
+  background-color: #cd1b20;
+  border: 2px solid #cd1b20;
+}
+a.facebook{
+  background-color: #3b5998;
+  border: 2px solid #3b5998;
+}
 
 #popup{
   z-index: 9999999999999;
@@ -423,7 +479,7 @@ table.stats tr td{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+  .padtop{ text-align: center !important; }
 }
 
 /* Small Devices, Tablets */
@@ -431,6 +487,13 @@ table.stats tr td{
   .row-eq-height{
     display: block !important;
   }
+
+  .padtop{ text-align: center !important; }
+  #footer a{display: inline;}
+  #footer a.social{display: inline-block;;}
+  .lang-selector{display: block !important;max-width: 200px;margin: 0 auto;}
+
+
 }
 
 /* Extra Small Devices, Phones */
@@ -466,6 +529,9 @@ table.stats tr td{
 @media only screen and (min-width : 768px) {
   #contact-us-mobile-icon{display: none;}
   #contact-us-desktop-popup{display: block;}
+
+
+
 }
 
 /* Medium Devices, Desktops */
