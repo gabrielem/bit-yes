@@ -28,7 +28,8 @@ table.tb tbody tr:first-child td{
   padding-top: 30px;
 }
 
-
+table.tb a{text-decoration: none;}
+table.tb a:hover{text-decoration: none;}
 
 @media
 only screen and (max-width: 760px),
