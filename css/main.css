@@ -336,6 +336,13 @@ a.text-withe-border:hover{
   outline:none;
 }
 
+#account select.currency2{
+  background-color: #03a585;
+  border: 1px solid  #03a585 !important;
+  border-color: 1px solid  #03a585 !important;
+  outline:none;
+}
+
 #account .item3 label{
   background-color: #004461;
   color: #ffffff;
