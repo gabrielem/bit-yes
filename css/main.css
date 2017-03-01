@@ -374,8 +374,16 @@ a.text-withe-border:hover{
   opacity: 0.8;
 }
 
-a.share{opacity: 1.0;}
-a.share:hover{opacity: 0.8;}
+a.share{
+  opacity: 1.0;
+  display: inline-block;
+  background: #00425b;
+  border-radius: 9px;
+  padding: 5px 15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+a.share:hover{opacity: 0.8;text-decoration: none;}
 
 
 .row-eq-height {
